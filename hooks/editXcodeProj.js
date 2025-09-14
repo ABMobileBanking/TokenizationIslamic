@@ -5,7 +5,7 @@ const plist = require('plist');
 
 function getProjectName() {
     return new Promise((resolve, reject) => {
-        console.log('Reading project name from config.xml...');
+        console.log('Reading project name from config.xml....');
         fs.readFile('config.xml', (err, data) => {
             if (err) {
                 console.error('Error reading config.xml:', err.message);
